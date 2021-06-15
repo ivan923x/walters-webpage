@@ -6,6 +6,8 @@ a:hover {
     text-decoration: none;
 }
 
+/* (index) */
+
 /* #header */
 
 header {
@@ -17,6 +19,9 @@ header {
 }
 .navLogo {
     height: 50px;
+}
+.nav-item {
+    width: 100%;
 }
 .nav-link {
     transition: color .15s ease-in-out, background-color .15s ease-in-out, border-color .15s ease-in-out;
@@ -135,13 +140,27 @@ header {
 /* content > introduction */
 #introduction {
     font-family: 'Noto Sans TC', sans-serif;
-    padding: 97px 32px;
+    padding: 67px 32px;
     background-image: url("https://upload.cc/i1/2021/06/10/M0Hu4c.jpg");
     display: none;
 }
+#introduction h2 {
+    font-size: 50px;
+    font-family: 'Noto Serif TC', serif;
+    margin: 0px 0px 23px 0px;
+    color: #333;
+}
+#introduction h3 {
+    margin: 0px;
+    font-size: 16px;
+    font-weight: 400px;
+}
 #introduction p {
-    text-align: center;
     margin-bottom: 23px;
+    text-indent: 2rem;
+}
+#introduction p:nth-child(1) {
+    text-indent: 0px;
 }
 #introduction p:nth-last-child(1) {
     margin-bottom: 0px;
@@ -155,7 +174,7 @@ header {
 #pieces {
     margin-bottom: 80px;
 }
-.piecesTitle {
+#pieces h2 {
     font-size: 50px;
     font-family: 'Noto Serif TC', serif;
     margin: 58px 0px;
@@ -198,11 +217,11 @@ header {
     overflow: hidden;
     display: flex;
 }
-.piecesImg>img {
+#pieces img {
     width: 100%;
     object-fit: cover;
 }
-.piecesName {
+#pieces h3 {
     margin: 0px;
     font-size: 28px;
     text-align: center;
@@ -253,6 +272,7 @@ footer video {
     margin: 400px 150px 0px 0px;
     text-align: right;
     color: #fff;
+    text-shadow: 0px 0px 4px #fff;
 }
 .moreVideo br {
     display: none;
@@ -269,8 +289,9 @@ footer video {
 .moreVideo a {
     color: #aaa;
     transition: color .2s ease-in-out, text-shadow .2s ease-in-out;
+    text-shadow: 0px 0px 0px;
 }
 .moreVideo a:hover {
     color: #fff;
-    text-shadow: 0px 0px 5px #fff;
+    text-shadow: 0px 0px 4px #fff;
 }
